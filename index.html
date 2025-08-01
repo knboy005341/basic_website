@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Minimal Landing Page</title>
+
+  <!-- TailwindCSS CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body class="bg-white text-gray-800 font-sans">
+
+  <!-- Navbar -->
+  <header class="p-6 flex justify-between items-center shadow-md">
+    <h1 class="text-2xl font-bold">MyBrand</h1>
+    <nav class="space-x-6 hidden md:block">
+      <a href="#features" class="hover:text-blue-600">Features</a>
+      <a href="#testimonials" class="hover:text-blue-600">Testimonials</a>
+      <a href="#contact" class="hover:text-blue-600">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="text-center py-20 px-6 bg-gray-50">
+    <h2 class="text-4xl font-bold mb-4">Welcome to Your Minimal Landing Page</h2>
+    <p class="text-lg text-gray-600 mb-6 max-w-xl mx-auto">
+      Build fast, beautiful websites with modern Tailwind CSS design.
+    </p>
+    <a href="#features" class="px-6 py-3 bg-blue-600 text-white rounded-full hover:bg-blue-700 transition">Get Started</a>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="py-16 px-6 bg-white">
+    <div class="text-center mb-12">
+      <h3 class="text-3xl font-semibold">Features</h3>
+      <p class="text-gray-600 mt-2">Simple. Elegant. Powerful.</p>
+    </div>
+    <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div class="text-center">
+        <div class="flex justify-center mb-4">
+          <i data-lucide="zap" class="w-10 h-10 text-blue-500"></i>
+        </div>
+        <h4 class="font-semibold mb-2">Fast</h4>
+        <p class="text-gray-600">Optimized for speed and minimal load time.</p>
+      </div>
+      <div class="text-center">
+        <div class="flex justify-center mb-4">
+          <i data-lucide="smartphone" class="w-10 h-10 text-blue-500"></i>
+        </div>
+        <h4 class="font-semibold mb-2">Responsive</h4>
+        <p class="text-gray-600">Works perfectly on any device.</p>
+      </div>
+      <div class="text-center">
+        <div class="flex justify-center mb-4">
+          <i data-lucide="feather" class="w-10 h-10 text-blue-500"></i>
+        </div>
+        <h4 class="font-semibold mb-2">Lightweight</h4>
+        <p class="text-gray-600">Built with clean and minimal code.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="py-20 px-6 bg-gray-100">
+    <div class="text-center mb-12">
+      <h3 class="text-3xl font-semibold">What People Say</h3>
+    </div>
+    <div class="max-w-3xl mx-auto space-y-8">
+      <blockquote class="bg-white p-6 rounded-lg shadow text-center">
+        <p class="italic">“This landing page is exactly what I needed. Clean and fast.”</p>
+        <span class="block mt-4 font-semibold">— Jane Doe</span>
+      </blockquote>
+      <blockquote class="bg-white p-6 rounded-lg shadow text-center">
+        <p class="italic">“Minimal but powerful. Great for any project.”</p>
+        <span class="block mt-4 font-semibold">— John Smith</span>
+      </blockquote>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section id="contact" class="py-20 px-6 bg-blue-600 text-white text-center">
+    <h3 class="text-3xl font-semibold mb-4">Ready to get started?</h3>
+    <a href="#" class="px-6 py-3 bg-white text-blue-600 font-semibold rounded-full hover:bg-gray-100 transition">Join Now</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-6 text-center text-gray-500 bg-gray-50">
+    © 2025 MyBrand. Built with TailwindCSS.
+  </footer>
+
+  <!-- Init Icons -->
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
